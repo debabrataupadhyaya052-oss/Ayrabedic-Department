@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayrabedic Webite</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ayrabedic.css">
+</head>
+
+<body>
+    <!-----Navigation Bar --->
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">
+                <i class="bi bi-leaf-fill"></i>
+                Natural Healing, Balanced Living
+            </p>
+
+            <p class="mb-0 top-contact">
+                <i class="bi bi-telephone-fill"></i> +91 7205602599
+            </p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg ayur-navbar sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="Ayurveda.html">
+                <span class="logo-icon">
+                    <i class="bi bi-flower1"></i>
+                </span>
+
+                <span class="logo-text">
+                    AYURVEDA
+                    <small>PURE NATURAL WELLNESS</small>
+                </span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="mainNavbar.html"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Ayurvedic Treatment.html">Ayurvedic Treatment</a></li>
+                            <li><a class="dropdown-item" href="Panchakarma Therapy.html">Panchakarma Therapy</a></li>
+                            <li><a class="dropdown-item" href="Younga & Meditation.html">Yoga & Meditation</a></li>
+                            <li><a class="dropdown-item" href="Herbal Consulation.html">Herbal Consultation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Design features.html">Design features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Right Side Buttons -->
+                <div class="nav-actions">
+
+                    <button class="search-btn" id="searchBtn" aria-label="Open search">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <a href="appointment.html" class="appointment-btn">
+                        Book Appointment
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Box -->
+    <div class="search-area" id="searchArea">
+        <div class="container">
+            <form id="searchForm">
+                <input type="search" id="searchInput" placeholder="Search treatments, products..." required>
+
+                <button type="submit">
+                    <i class="bi bi-search"></i> Search
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="home-section" id="home">
+
+        <div class="home-overlay"></div>
+
+        <div class="container home-container">
+
+            <div class="row align-items-center">
+
+                <!-- Left Content -->
+                <div class="col-lg-7">
+
+                    <div class="home-content">
+
+                        <div class="welcome-label">
+                            <i class="bi bi-flower1"></i>
+                            THE ART OF NATURAL WELLNESS
+                        </div>
+
+                        <h1>
+                            Heal Naturally.
+                            <br>
+                            Live <span>Beautifully.</span>
+                        </h1>
+
+                        <p class="home-description">
+                            Experience the ancient wisdom of Ayurveda.
+                            Bring your mind, body and soul into harmony with
+                            the power of nature.Experience natural healing, herbal treatments
+                            and a peaceful balance between your mind,
+                            body and soul.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="home-buttons">
+
+                            <a href="services.html" class="primary-btn">
+                                Explore Treatments
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                            <a href="about.html" class="secondary-btn">
+                                <i class="bi bi-play-circle"></i>
+                                Discover More
+                            </a>
+
+                        </div>
+
+                        <!-- Search Form -->
+                        <div class="home-search">
+
+                            <div class="search-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <input type="text" id="treatmentSearch" placeholder="Search Ayurvedic treatments...">
+
+                            <button type="button" id="searchButton">
+                                Search
+                            </button>
+
+                        </div>
+
+                        <p id="searchMessage" class="search-message"></p>
+
+                    </div>
+                </div>
+
+                <!-- Right Side Floating Card -->
+                <div class="col-lg-5">
+
+                    <div class="wellness-card">
+
+                        <div class="card-icon">
+                            <i class="bi bi-flower3"></i>
+                        </div>
+
+                        <span class="card-small-title">
+                            NATURAL WELLNESS
+                        </span>
+
+                        <h3>Reconnect With Nature</h3>
+
+                        <p>
+                            A healthier lifestyle begins with
+                            natural choices and mindful living.
+                        </p>
+
+                        <div class="card-divider"></div>
+
+                        <div class="card-features">
+
+                            <div>
+                                <i class="bi bi-check-circle-fill"></i>
+                                Herbal Wellness
+                            </div>
+
+                            <div>
+                                <i class="bi bi-check-circle-fill"></i>
+                                Natural Therapies
+                            </div>
+
+                            <div>
+                                <i class="bi bi-check-circle-fill"></i>
+                                Mind & Body Balance
+                            </div>
+
+                        </div>
+
+                        <a href="about.html" class="card-link">
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Information -->
+            <div class="home-bottom">
+
+                <div class="bottom-item">
+                    <i class="bi bi-leaf"></i>
+                    <span>Pure Natural Care</span>
+                </div>
+
+                <div class="bottom-item">
+                    <i class="bi bi-heart-pulse"></i>
+                    <span>Holistic Wellness</span>
+                </div>
+
+                <div class="bottom-item">
+                    <i class="bi bi-flower2"></i>
+                    <span>Ancient Ayurveda</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-----About Us Bar --->
+    <section class="about-section" id="about">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+
+                <span class="section-tag">
+                    <i class="bi bi-flower1"></i>
+                    ABOUT OUR WELLNESS
+                </span>
+
+                <h2>
+                    Nature's Wisdom,
+                    <span>Our Healing Promise</span>
+                </h2>
+
+                <p>
+                    Bringing ancient Ayurvedic knowledge into
+                    modern everyday wellness.
+                </p>
+
+            </div>
+
+            <!-- About Content -->
+            <div class="row align-items-center about-row">
+
+                <!-- Left Image -->
+                <div class="col-lg-6">
+
+                    <div class="about-image-wrapper">
+
+                        <img src="./Assets/Natural wellness and spa therapy_flg.jpg"
+                            alt="Natural wellness and spa therapy" class="about-image">
+
+                        <!-- Experience Box -->
+                        <div class="experience-box">
+
+                            <i class="bi bi-flower3"></i>
+
+                            <h3>100%</h3>
+
+                            <p>Nature Inspired Wellness</p>
+
+                        </div>
+
+                        <!-- Decorative Circle -->
+                        <div class="image-decoration"></div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6">
+
+                    <div class="about-content">
+
+                        <span class="sub-heading">
+                            WHO WE ARE
+                        </span>
+
+                        <h3>
+                            Bringing You Closer
+                            To A Natural Way Of Life
+                        </h3>
+
+                        <p class="about-description">
+                            Ayurveda is an ancient Indian system of
+                            wellness that focuses on harmony between
+                            the mind, body and soul.
+
+                            Our goal is to introduce natural wellness
+                            practices and traditional knowledge into
+                            modern lifestyles.
+                        </p>
+
+                        <p class="about-description">
+                            We believe that healthy living begins with
+                            balance, mindful habits and respect for
+                            nature.
+                        </p>
+
+                        <!-- Mission and Vision -->
+                        <div class="about-points">
+
+                            <div class="point-item">
+                                <div class="point-icon">
+                                    <i class="bi bi-bullseye"></i>
+                                </div>
+
+                                <div>
+                                    <h5>Our Mission</h5>
+                                    <p>
+                                        To encourage natural wellness
+                                        through traditional Ayurvedic
+                                        knowledge.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="point-item">
+                                <div class="point-icon">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+
+                                <div>
+                                    <h5>Our Vision</h5>
+                                    <p>
+                                        To inspire a healthier lifestyle
+                                        through balance and nature.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Read More -->
+                        <button class="about-btn" id="readMoreBtn">
+                            Read More
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                        <!-- Hidden Content -->
+                        <div class="more-content" id="moreContent">
+
+                            <p>
+                                Our wellness philosophy celebrates
+                                natural ingredients, mindful living,
+                                yoga, meditation and traditional
+                                Ayurvedic practices.
+
+                                We aim to help people make informed
+                                choices about their everyday wellness.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Achievement Counter -->
+            <div class="achievement-section">
+
+                <div class="row text-center g-4">
+
+                    <div class="col-6 col-lg-3">
+                        <div class="achievement-box">
+                            <i class="bi bi-flower2"></i>
+                            <h3 class="counter" data-target="10">0</h3>
+                            <p>Years of Inspiration</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="achievement-box">
+                            <i class="bi bi-people"></i>
+                            <h3 class="counter" data-target="500">0</h3>
+                            <p>Wellness Sessions</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="achievement-box">
+                            <i class="bi bi-leaf"></i>
+                            <h3 class="counter" data-target="50">0</h3>
+                            <p>Natural Ingredients</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="achievement-box">
+                            <i class="bi bi-heart"></i>
+                            <h3 class="counter" data-target="100">0</h3>
+                            <p>Nature Focused</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-----Services Bar --->
+    <section class="services-section" id="services">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="section-heading text-center">
+
+                <span class="section-tag">
+                    <i class="bi bi-flower1"></i>
+                    OUR NATURAL SERVICES
+                </span>
+
+                <h1>
+                    Explore Our
+                    <span>Ayurvedic Services</span>
+                </h1>
+
+                <p>
+                    Discover natural wellness experiences inspired
+                    by the ancient wisdom of Ayurveda.
+                </p>
+
+            </div>
+
+            <!-- Dropdown Filter Bar -->
+            <div class="service-filter">
+
+                <div class="filter-title">
+                    <i class="bi bi-funnel-fill"></i>
+                    Choose Your Service
+                </div>
+
+                <div class="dropdown">
+
+                    <button class="btn filter-dropdown dropdown-toggle" type="button" id="serviceDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <span id="selectedCategory">All Services</span>
+
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+
+                        <li>
+                            <button class="dropdown-item active-filter" type="button" data-filter="all">
+                                All Services
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button" data-filter="treatment">
+                                Ayurvedic Treatment
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button" data-filter="panchakarma">
+                                Panchakarma Therapy
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button" data-filter="yoga">
+                                Yoga & Meditation
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button" data-filter="herbal">
+                                Herbal Care
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button" data-filter="wellness">
+                                Wellness Programs
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Service Cards -->
+            <div class="row g-4" id="serviceContainer">
+
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6 service-item" data-category="treatment">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img src="" alt="Ayurvedic treatment">
+
+                            <span class="service-number">01</span>
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-flower3"></i>
+                            </div>
+
+                            <span class="category-name">
+                                AYURVEDIC TREATMENT
+                            </span>
+
+                            <h3>Natural Healing Therapy</h3>
+
+                            <p>
+                                Explore traditional Ayurvedic wellness
+                                practices using natural ingredients
+                                and mindful routines.
+                            </p>
+
+                            <a href="contact.html" class="service-link">
+                                View Details
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6 service-item" data-category="panchakarma">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img src="" alt="Panchakarma spa therapy">
+
+                            <span class="service-number">02</span>
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-droplet-half"></i>
+                            </div>
+
+                            <span class="category-name">
+                                PANCHAKARMA
+                            </span>
+
+                            <h3>Panchakarma Therapy</h3>
+
+                            <p>
+                                Learn about traditional Panchakarma
+                                practices under qualified professional
+                                guidance.
+                            </p>
+
+                            <a href="contact.html" class="service-link">
+                                View Details
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6 service-item" data-category="yoga">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img src=""
+                                alt="Yoga and meditation">
+
+                            <span class="service-number">03</span>
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-person-arms-up"></i>
+                            </div>
+
+                            <span class="category-name">
+                                YOGA & MEDITATION
+                            </span>
+
+                            <h3>Yoga & Meditation</h3>
+
+                            <p>
+                                Discover mindful movement, breathing
+                                exercises and meditation for everyday
+                                well-being.
+                            </p>
+
+                            <a href="contact.html" class="service-link">
+                                View Details
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-lg-4 col-md-6 service-item" data-category="herbal">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img src=""
+                                alt="Herbal natural care">
+
+                            <span class="service-number">04</span>
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-leaf"></i>
+                            </div>
+
+                            <span class="category-name">
+                                HERBAL CARE
+                            </span>
+
+                            <h3>Herbal Wellness Care</h3>
+
+                            <p>
+                                Discover traditional herbal ingredients
+                                and learn about their role in natural
+                                wellness routines.
+                            </p>
+
+                            <a href="contact.html" class="service-link">
+                                View Details
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-lg-4 col-md-6 service-item" data-category="wellness">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img src=""
+                                alt="Wellness lifestyle">
+
+                            <span class="service-number">05</span>
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+
+                            <span class="category-name">
+                                WELLNESS PROGRAM
+                            </span>
+
+                            <h3>Healthy Lifestyle Program</h3>
+
+                            <p>
+                                Explore mindful daily habits, balanced
+                                routines and lifestyle wellness education.
+                            </p>
+
+                            <a href="contact.html" class="service-link">
+                                View Details
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-lg-4 col-md-6 service-item" data-category="treatment">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img src=""
+                                alt="Ayurvedic oil massage">
+
+                            <span class="service-number">06</span>
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-water"></i>
+                            </div>
+
+                            <span class="category-name">
+                                AYURVEDIC TREATMENT
+                            </span>
+
+                            <h3>Traditional Oil Massage</h3>
+
+                            <p>
+                                Experience traditional oil massage
+                                practices offered with suitable
+                                professional guidance.
+                            </p>
+
+                            <a href="contact.html" class="service-link">
+                                View Details
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No Result Message -->
+            <div id="noResults" class="no-results">
+                No services found in this category.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+    <!-----Navigation Bar --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+<script src="ayrabedic.js"></script>
+
+</html>
